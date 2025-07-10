@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About | K.Ram Sai Prasanna Teja</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
+      color: #2c3e50;
+      min-height: 100vh;
+      padding: 30px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      color: #1f3b4d;
+    }
+
+    .about-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      animation: fadeIn 0.6s ease;
+    }
+
+    .about-container h2 {
+      color: #1abc9c;
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+
+    .about-container p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .skill {
+      background-color: #1abc9c;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-size: 16px;
+      transition: background 0.3s, transform 0.2s;
+      cursor: default;
+    }
+
+    .skill:hover {
+      background-color: #159c85;
+      transform: scale(1.05);
+    }
+
+    .education {
+      margin-top: 20px;
+    }
+
+    .edu-card {
+      background: #f9f9f9;
+      border-left: 6px solid #1abc9c;
+      padding: 20px 25px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .edu-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .edu-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #1f3b4d;
+      margin-bottom: 6px;
+    }
+
+    .edu-sub {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .edu-desc {
+      font-size: 15px;
+      color: #666;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .about-container {
+        padding: 20px;
+      }
+
+      .about-container h2 {
+        font-size: 22px;
+      }
+
+      .about-container p {
+        font-size: 16px;
+      }
+
+      .edu-card {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About Me</h1>
+  </header>
+
+  <div class="about-container">
+    <h2>Who Am I?</h2>
+    <p>
+      Hello! I'm <strong>K.Ram Sai Prasanna Teja</strong>, a dedicated and enthusiastic individual passionate about web development, design, and building smart digital experiences. I enjoy solving problems and always strive to keep learning and improving my skills.
+    </p>
+
+    <h2>My Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">PHP</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">Responsive Design</div>
+      <div class="skill">Git & GitHub</div>
+    </div>
+
+    <h2>🎓 Education</h2>
+    <div class="education">
+      <div class="edu-card">
+        <div class="edu-title">Bachelor of Science in Computer Science</div>
+        <div class="edu-sub">XYZ University — Graduated in 2022</div>
+        <div class="edu-desc">Focus: Web Development, Data Structures, AI & Machine Learning</div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-title">High School Diploma</div>
+        <div class="edu-sub">ABC High School — Completed in 2018</div>
+        <div class="edu-desc">Achievements: Top 5% of the class, President of the Coding Club</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

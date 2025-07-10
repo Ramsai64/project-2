@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio | K.Ram Sai Prasanna Teja</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f7f9fc;
+      color: #2c3e50;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      padding: 20px 40px;
+      background: #34495e;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      position: relative;
+    }
+
+    nav a::after {
+      content: "";
+      height: 2px;
+      width: 0%;
+      background: #1abc9c;
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      transition: 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    .profile-pic {
+      flex: 1 1 250px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .profile-pic img {
+      width: 280px;
+      height: auto;
+      border-radius: 20px; 
+      border: 5px solid #1abc9c;
+      object-fit: cover;
+      opacity: 0;
+      animation: fadeIn 1s forwards, zoomIn 0.5s ease-in-out 0.5s; /* Added animations */
+      cursor: pointer;
+    }
+
+    /* Zoom-in effect */
+    @keyframes zoomIn {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* Fade-in effect */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .profile-pic img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    .content {
+      flex: 2 1 400px;
+      padding-left: 40px;
+    }
+
+    .content h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #1f3b4d;
+    }
+
+    .content p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #34495e;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .content {
+        padding-left: 0;
+      }
+    }
+
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .modal img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      border: 5px solid #fff;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="project.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="container">
+    <div class="profile-pic">
+      <img id="profilePic" src="profile.png" alt="Profile Picture" />
+    </div>
+    <div class="content">
+      <h2 id="username">K.Ram Sai Prasanna Teja</h2>
+      <p>
+        I’m a passionate and creative tech enthusiast with a strong background in computer science and real-world experience in web development and software projects. I graduated with a degree in Computer Science, where I honed my skills in front-end and back-end development, problem-solving, and project collaboration.
+      </p>
+      <p>Over the years, I’ve worked on several projects both independently and as part of a team—ranging from responsive websites and e-learning systems to custom applications for clients. My technical toolkit includes HTML, CSS, JavaScript, PHP, MySQL, and modern libraries, and I’m always learning new technologies to stay up-to-date with the latest trends.</p>
+    </div>
+  </section>
+
+  <!-- Modal for enlarged image -->
+  <div class="modal" id="imgModal">
+    <img src="profile.png" alt="Enlarged Profile Picture" />
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const profilePic = document.getElementById("profilePic");
+      const modal = document.getElementById("imgModal");
+      const modalImg = modal.querySelector("img");
+
+      profilePic.addEventListener("click", () => {
+        modal.classList.add("active");
+        modalImg.src = profilePic.src;
+      });
+
+      modal.addEventListener("click", () => {
+        modal.classList.remove("active");
+      });
+    });
+  </script>
+</body>
+</html>
