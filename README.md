@@ -1,55 +1,51 @@
-# project-2:
-# 🌐 Personal Portfolio Website
+# Personal Portfolio Website
 
-Welcome to the official repository of **K.Ram Sai Prasanna Teja**'s portfolio website — a beautifully crafted personal site built with HTML, CSS, and JavaScript, designed to showcase my journey, skills, and projects.
+Welcome to the official repository of **K. Ram Sai Prasanna Teja's** portfolio website — a carefully crafted personal site built using HTML, CSS, and JavaScript. It showcases my journey, skills, and projects in a clean and responsive layout.
 
-## ✨ Live Preview
+## Live Preview
 
-You can explore the website via the following sections:
+The website includes the following sections:
 
-- 🏠 [Home (index.html)](./index.html)
-- 👨‍💻 [About Me](./about.html)
-- 🚀 [Projects](./project.html)
-- 📬 [Contact](./contact.html)
+- Home (`index.html`)
+- About Me
+- Projects
+- Contact
 
----
+## Features
 
-## 📌 Features
-
-### 🔹 **Responsive Layout**
+### Responsive Layout
 - Fully mobile-friendly design
-- Flexbox & media queries for modern responsiveness
+- Flexbox and media queries for adaptable responsiveness
 
-### 🔹 **Professional Branding**
-- Profile picture modal popup
-- Animated elements using keyframes
-- Clean and modern UI design
+### Professional Branding
+- Modal popup for profile picture
+- Smooth animations using CSS keyframes
+- Clean and modern user interface
 
-### 🔹 **About Section**
-- Personal introduction
-- Skills showcase using styled tags
-- Education timeline with hover cards
+### About Section
+- Personal introduction and summary
+- Skill tags styled with custom CSS
+- Educational timeline with interactive hover effects
 
-### 🔹 **Projects Gallery**
-- Grid layout of project cards with images and descriptions
-- Auto-sliding project showcase
-- Hover animations and transitions
+### Projects Gallery
+- Grid layout showcasing various project cards
+- Each card includes image, title, and description
+- Automatic sliding carousel for featured projects
+- Interactive hover animations and transitions
 
-### 🔹 **Contact Form**
-- Fully functional form (client-side) with validation
-- Form input animations and error display
-- No backend required (customize for integration)
+### Contact Form
+- Fully functional form with client-side validation
+- Animated input fields with real-time error feedback
+- Backend-free by default (easily integratable with a mail service or backend)
 
----
+## Tech Stack
 
-## 🛠️ Tech Stack
+- HTML5
+- CSS3
+- Vanilla JavaScript (No external libraries or frameworks)
 
-- **HTML5**
-- **CSS3**
-- **Vanilla JavaScript**
-- **No frameworks or libraries used**
+## Usage
 
----
-
-
-
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/portfolio-website.git
